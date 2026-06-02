@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RARO</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+<title>RARO | ATHAR</title>
 
 <style>
 
@@ -14,160 +14,206 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Inter',sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
 background:#111111;
 color:#F3F0EA;
-overflow-x:hidden;
 }
 
-.hero{
+.container{
+display:grid;
+grid-template-columns:320px 1fr;
+min-height:100vh;
+}
+
+.sidebar{
+
+background:#0c0c0c;
+padding:50px;
+position:sticky;
+top:0;
 height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
 }
 
 .logo{
-font-size:5rem;
-letter-spacing:12px;
-}
-
-.tagline{
-margin-top:20px;
-letter-spacing:4px;
-color:#999;
-}
-
-.button{
-margin-top:40px;
-padding:15px 40px;
-border:1px solid #F3F0EA;
-text-decoration:none;
-color:white;
-}
-
-.section{
-padding:120px 10%;
-}
-
-.section h2{
-font-size:3rem;
+font-size:60px;
+letter-spacing:10px;
 margin-bottom:30px;
 }
 
-.product{
-margin-bottom:120px;
+.arabic{
+font-size:50px;
+margin-bottom:30px;
 }
 
-.product img{
-width:100%;
-border-radius:10px;
+.desc{
+line-height:1.8;
+color:#cccccc;
 }
 
-.product h3{
-margin-top:20px;
-font-size:2rem;
+.price{
+margin-top:40px;
+font-size:40px;
+font-weight:bold;
 }
 
-.footer{
-padding:80px;
+.button{
+
+display:block;
+margin-top:40px;
+padding:18px;
 text-align:center;
-border-top:1px solid #333;
+background:#F3F0EA;
+color:#111;
+text-decoration:none;
+font-weight:bold;
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:15px;
+}
+
+.card img{
+width:100%;
+display:block;
+}
+
+.card h3{
+margin-top:15px;
+font-size:18px;
+}
+
+.full{
+grid-column:span 2;
+}
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+height:auto;
+position:relative;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.full{
+grid-column:span 1;
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<section class="hero">
+<div class="container">
 
-<h1 class="logo">RARO</h1>
+<div class="sidebar">
 
-<p class="tagline">
-DESIGNED TO REMAIN RARE
+<div class="logo">RARO</div>
+
+<div class="arabic">أثر</div>
+
+<p class="desc">
+
+Every path leaves a mark.
+
+Designed as the opening piece of DROP 01.
+
+Limited to 40 pieces only.
+
+240 GSM cotton.
+Oversized fit.
+
 </p>
 
-<a href="#drop" class="button">
-ENTER DROP 01
+<div class="price">
+
+39$
+
+</div>
+
+<a href="#" class="button">
+
+JOIN WAITLIST
+
 </a>
 
-</section>
+</div>
 
-<section id="drop" class="section">
+<div class="gallery">
 
-<h2>DROP 01 — ATHAR</h2>
+<div class="card">
 
-<div class="product">
+<img src="images/images/IMG_2079.jpeg">
 
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
-
-<h3>ATHAR</h3>
-
-<p>
-40 Pieces Only.
-Never Restocked.
-</p>
+<h3>Front View</h3>
 
 </div>
 
-<div class="product">
+<div class="card">
 
-<img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+<img src="images/images/IMG_2080.jpeg">
 
-<h3>DIJLA</h3>
-
-<p>
-Inspired By Movement.
-</p>
+<h3>Back View</h3>
 
 </div>
 
-</section>
+<div class="card">
 
-<section class="section">
+<img src="images/images/IMG_2081.jpeg">
 
-<h2>WHY RARO?</h2>
+<h3>Embroidery Detail</h3>
 
-<p>
+</div>
 
-Because not everything
-should be mass produced.
+<div class="card">
 
-</p>
+<img src="images/images/IMG_2082.jpeg">
 
-</section>
+<h3>Fabric Detail</h3>
 
-<section class="section">
+</div>
 
-<h2>JOIN WAITLIST</h2>
+<div class="card">
 
-<form>
+<img src="images/images/IMG_2083.jpeg">
 
-<input
-type="email"
-placeholder="Email"
-style="
-width:100%;
-padding:20px;
-margin-top:20px;
-">
+<h3>Packaging</h3>
 
-</form>
+</div>
 
-</section>
+<div class="card full">
 
-<footer class="footer">
+<img src="images/images/IMG_2084.jpeg">
 
-RARO © 2026
+<h3>Lifestyle Shot</h3>
 
-</footer>
+</div>
+
+</div>
+
+</div>
 
 </body>
+
 </html>
-<!-- deploy test -->

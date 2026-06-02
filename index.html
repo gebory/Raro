@@ -1,101 +1,204 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>RARO</title>
 
 <style>
-body{
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-background:
-linear-gradient(
-rgba(0,0,0,0.75),
-rgba(0,0,0,0.75)
-),
-url('images/images/IMG_2079.jpeg');
+body{
 
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+background:#050505;
 
-color:#f3f0ea;
-font-family:Arial,sans-serif;
+color:#b08d57;
 
-display:flex;
-justify-content:center;
-align-items:center;
+font-family:Arial, sans-serif;
 
 height:100vh;
 
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+overflow:hidden;
+
+}
+
+.container{
+
 text-align:center;
+
+max-width:700px;
+
+padding:30px;
+
 }
 
 .logo{
-font-size:90px;
-letter-spacing:12px;
+
+font-size:80px;
+
+letter-spacing:15px;
+
+font-weight:300;
+
+margin-bottom:20px;
+
 }
 
-.tagline{
-margin-top:20px;
-color:#999;
-letter-spacing:4px;
+.symbol{
+
+font-size:35px;
+
+margin-bottom:30px;
+
 }
 
-.drop{
-margin-top:30px;
-font-size:24px;
+.archive{
+
+letter-spacing:8px;
+
+font-size:18px;
+
+margin-bottom:40px;
+
+}
+
+.description{
+
+color:#d4c2a1;
+
+font-size:18px;
+
+line-height:1.8;
+
+margin-bottom:60px;
+
 }
 
 .enter{
+
 display:inline-block;
-margin-top:50px;
+
 padding:18px 50px;
-border:1px solid #f3f0ea;
-color:#f3f0ea;
+
+border:1px solid #b08d57;
+
+color:#b08d57;
+
 text-decoration:none;
+
+letter-spacing:4px;
+
+transition:0.3s;
+
+margin-bottom:60px;
+
 }
 
 .enter:hover{
-background:#f3f0ea;
-color:#111;
+
+background:#b08d57;
+
+color:black;
+
 }
+
+.bottom{
+
+display:flex;
+
+justify-content:center;
+
+gap:60px;
+
+}
+
+.bottom a{
+
+color:#b08d57;
+
+text-decoration:none;
+
+letter-spacing:4px;
+
+font-size:14px;
+
+}
+
+.glow{
+
+position:absolute;
+
+width:500px;
+
+height:500px;
+
+background:radial-gradient(circle,
+rgba(176,141,87,0.18) 0%,
+rgba(176,141,87,0.04) 40%,
+transparent 70%);
+
+filter:blur(50px);
+
+z-index:-1;
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<div>
+<div class="glow"></div>
+
+<div class="container">
 
 <div class="logo">RARO</div>
 
-<div class="tagline">
-CRAFTED IN LIMITED NUMBERS
-<br><br>
-DESIGNED TO REMAIN RARE
+<div class="symbol">⌄</div>
+
+<div class="archive">
+ARCHIVE OF MARKS
 </div>
 
-<div class="drop">
-
+<div class="description">
+Every piece begins as an idea.<br>
+Before it becomes a garment.
 </div>
 
-<a class="enter" href="collection.html">
-ENTER
-</a>
-<div style="margin-top:25px;">
-<a href="about.html" style="color:#999;text-decoration:none;">
-ABOUT
+<a href="archive.html" class="enter">
+ENTER THE ARCHIVE
 </a>
 
-&nbsp;&nbsp;&nbsp;
+<div class="bottom">
 
-<a href="waitlist.html" style="color:#999;text-decoration:none;">
+<a href="archive.html">
+ARCHIVE
+</a>
+
+<a href="waitlist.html">
 WAITLIST
 </a>
+
 </div>
+
 </div>
 
 </body>
+
 </html>

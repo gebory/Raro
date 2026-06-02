@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RARO Archive</title>
+<title>RARO — Archive</title>
 
 <style>
 
@@ -14,6 +13,10 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -26,112 +29,192 @@ font-family:Arial,sans-serif;
 
 .header{
 
-padding:40px 30px;
+min-height:70vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
 text-align:center;
+
+padding:40px;
 
 }
 
 .header h1{
 
-font-size:48px;
-letter-spacing:12px;
+font-size:clamp(48px,8vw,90px);
+
 font-weight:300;
 
+letter-spacing:12px;
+
+margin-bottom:30px;
+
 }
 
-.subtitle{
+.header p{
 
-margin-top:25px;
-font-size:18px;
 color:#d4c2a1;
+
+font-size:18px;
+
 line-height:1.8;
 
-}
-
-.timeline{
-
-max-width:800px;
-margin:100px auto;
-position:relative;
+max-width:600px;
 
 }
 
-.line{
+.archive{
 
-position:absolute;
-left:50%;
-top:0;
-bottom:0;
-width:2px;
-background:#b08d57;
-transform:translateX(-50%);
+max-width:900px;
+
+margin:auto;
+
+padding:0 25px 120px 25px;
 
 }
 
-.item{
-
-position:relative;
-margin:120px 0;
-text-align:center;
-
-}
-
-.dot{
-
-width:18px;
-height:18px;
-background:#b08d57;
-border-radius:50%;
-margin:0 auto 25px auto;
-
-box-shadow:
-0 0 10px #b08d57,
-0 0 20px #b08d57;
-
-}
-
-.item a{
+.concept{
 
 text-decoration:none;
-color:#b08d57;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+padding:120px 0;
+
+transition:0.4s ease;
+
+color:inherit;
+
+}
+
+.concept:hover{
+
+transform:scale(1.03);
 
 }
 
 .number{
 
-font-size:14px;
-letter-spacing:4px;
-margin-bottom:10px;
+font-size:12px;
+
+letter-spacing:6px;
+
+margin-bottom:30px;
+
+opacity:.7;
+
+}
+
+.symbol{
+
+font-size:60px;
+
+line-height:1.4;
+
+margin-bottom:40px;
+
+transition:.4s;
+
+}
+
+.concept:hover .symbol{
+
+text-shadow:
+0 0 10px rgba(176,141,87,.6),
+0 0 30px rgba(176,141,87,.4),
+0 0 60px rgba(176,141,87,.2);
 
 }
 
 .name{
 
-font-size:34px;
+font-size:42px;
+
+font-weight:300;
+
 letter-spacing:10px;
-margin-bottom:10px;
+
+margin-bottom:12px;
 
 }
 
 .meaning{
 
 font-size:16px;
+
 color:#d4c2a1;
+
+letter-spacing:3px;
+
+margin-bottom:20px;
+
+}
+
+.quote{
+
+font-size:18px;
+
+color:#b08d57;
+
+max-width:500px;
+
+line-height:1.8;
+
+}
+
+.divider{
+
+width:1px;
+
+height:80px;
+
+background:rgba(176,141,87,.25);
+
+margin:auto;
 
 }
 
 .footer{
 
+padding:150px 20px;
+
 text-align:center;
-padding:80px 0;
 
 }
 
-.footer a{
+.collection-btn{
+
+display:inline-block;
+
+padding:20px 55px;
+
+border:1px solid #b08d57;
 
 color:#b08d57;
+
 text-decoration:none;
+
 letter-spacing:4px;
+
+transition:.3s;
+
+}
+
+.collection-btn:hover{
+
+background:#b08d57;
+
+color:#050505;
 
 }
 
@@ -141,117 +224,154 @@ letter-spacing:4px;
 
 <body>
 
-<div class="header">
+<section class="header">
 
 <h1>ARCHIVE</h1>
 
-<div class="subtitle">
+<p>
+Every story begins with an origin.<br>
+And ends as an echo.
+</p>
 
-Every mark begins somewhere.<br>
-Every journey leaves something behind.
+</section>
 
-</div>
+<section class="archive">
 
-</div>
-
-<div class="timeline">
-
-<div class="line"></div>
-
-<div class="item">
-
-<div class="dot"></div>
-
-<a href="roots.html">
+<a href="void.html" class="concept">
 
 <div class="number">01</div>
-<div class="name">ROOTS</div>
-<div class="meaning">Origin</div>
+
+<div class="symbol">
+○<br>•
+</div>
+
+<div class="name">VOID</div>
+
+<div class="meaning">BEGINNING</div>
+
+<div class="quote">
+Nothing. Yet. Everything.
+</div>
 
 </a>
 
-</div>
+<div class="divider"></div>
 
-<div class="item">
-
-<div class="dot"></div>
-
-<a href="nhr.html">
+<a href="roots.html" class="concept">
 
 <div class="number">02</div>
-<div class="name">NHR</div>
-<div class="meaning">Journey</div>
+
+<div class="symbol">
+│<br>
+/│\<br>
+/ │ \
+</div>
+
+<div class="name">ROOTS</div>
+
+<div class="meaning">ORIGIN</div>
+
+<div class="quote">
+Every origin shapes the path ahead.
+</div>
 
 </a>
 
-</div>
+<div class="divider"></div>
 
-<div class="item">
-
-<div class="dot"></div>
-
-<a href="dijla.html">
+<a href="nhr.html" class="concept">
 
 <div class="number">03</div>
-<div class="name">DIJLA</div>
-<div class="meaning">Movement</div>
+
+<div class="symbol">
+╱╲<br>
+╲╱
+</div>
+
+<div class="name">NHR</div>
+
+<div class="meaning">JOURNEY</div>
+
+<div class="quote">
+Every route becomes a story.
+</div>
 
 </a>
 
-</div>
+<div class="divider"></div>
 
-<div class="item">
-
-<div class="dot"></div>
-
-<a href="athar.html">
+<a href="dijla.html" class="concept">
 
 <div class="number">04</div>
-<div class="name">ATHAR</div>
-<div class="meaning">Mark</div>
+
+<div class="symbol">
+≈≈≈
+</div>
+
+<div class="name">DIJLA</div>
+
+<div class="meaning">MOVEMENT</div>
+
+<div class="quote">
+Movement without noise.
+</div>
 
 </a>
 
-</div>
+<div class="divider"></div>
 
-<div class="item">
-
-<div class="dot"></div>
-
-<a href="echo.html">
+<a href="athar.html" class="concept">
 
 <div class="number">05</div>
-<div class="name">ECHO</div>
-<div class="meaning">Resonance</div>
+
+<div class="symbol">
+•<br>
+\<br>
+\<br>
+•
+</div>
+
+<div class="name">ATHAR</div>
+
+<div class="meaning">MARK</div>
+
+<div class="quote">
+Every path leaves a mark.
+</div>
 
 </a>
 
-</div>
+<div class="divider"></div>
 
-<div class="item">
-
-<div class="dot"></div>
-
-<a href="void.html">
+<a href="echo.html" class="concept">
 
 <div class="number">06</div>
-<div class="name">VOID</div>
-<div class="meaning">Beginning</div>
+
+<div class="symbol">
+◉<br>
+◎<br>
+○
+</div>
+
+<div class="name">ECHO</div>
+
+<div class="meaning">RESONANCE</div>
+
+<div class="quote">
+What remains, remains with meaning.
+</div>
 
 </a>
 
-</div>
+</section>
 
-</div>
+<section class="footer">
 
-<div class="footer">
-
-<a href="index.html">
-RETURN HOME
+<a href="collection.html" class="collection-btn">
+ENTER THE COLLECTION
 </a>
 
-</div>
+</section>
 
 </body>
-
 </html>

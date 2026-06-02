@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RARO | ATHAR</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111111;
+color:#F3F0EA;
+}
+
+.container{
+display:grid;
+grid-template-columns:320px 1fr;
+min-height:100vh;
+}
+
+.sidebar{
+
+background:#0c0c0c;
+padding:50px;
+position:sticky;
+top:0;
+height:100vh;
+}
+
+.logo{
+font-size:60px;
+letter-spacing:10px;
+margin-bottom:30px;
+}
+
+.arabic{
+font-size:50px;
+margin-bottom:30px;
+}
+
+.desc{
+line-height:1.8;
+color:#cccccc;
+}
+
+.price{
+margin-top:40px;
+font-size:40px;
+font-weight:bold;
+}
+
+.button{
+
+display:block;
+margin-top:40px;
+padding:18px;
+text-align:center;
+background:#F3F0EA;
+color:#111;
+text-decoration:none;
+font-weight:bold;
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:15px;
+}
+
+.card img{
+width:100%;
+display:block;
+}
+
+.card h3{
+margin-top:15px;
+font-size:18px;
+}
+
+.full{
+grid-column:span 2;
+}
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+height:auto;
+position:relative;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.full{
+grid-column:span 1;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<div class="logo">RARO</div>
+
+<div class="arabic">أثر</div>
+
+<p class="desc">
+
+Every path leaves a mark.
+
+Designed as the opening piece of DROP 01.
+
+Limited to 40 pieces only.
+
+240 GSM cotton.
+Oversized fit.
+
+</p>
+
+<div class="price">
+
+39$
+
+</div>
+
+<a href="#" class="button">
+
+JOIN WAITLIST
+
+</a>
+
+</div>
+
+<div class="gallery">
+
+<div class="card">
+
+<img src="images/images/IMG_2079.jpeg">
+
+<h3>Front View</h3>
+
+</div>
+
+<div class="card">
+
+<img src="images/images/IMG_2080.jpeg">
+
+<h3>Back View</h3>
+
+</div>
+
+<div class="card">
+
+<img src="images/images/IMG_2081.jpeg">
+
+<h3>Embroidery Detail</h3>
+
+</div>
+
+<div class="card">
+
+<img src="images/images/IMG_2082.jpeg">
+
+<h3>Fabric Detail</h3>
+
+</div>
+
+<div class="card">
+
+<img src="images/images/IMG_2083.jpeg">
+
+<h3>Packaging</h3>
+
+</div>
+
+<div class="card full">
+
+<img src="images/images/IMG_2084.jpeg">
+
+<h3>Lifestyle Shot</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

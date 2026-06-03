@@ -7,77 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>RARO — VOID</title>
-/* ARCHIVE NOTES */
 
-.archive-notes{
-
-min-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-padding:40px;
-
-}
-
-.archive-card{
-
-width:min(90%,500px);
-
-border:1px solid rgba(176,141,87,.25);
-
-padding:50px 35px;
-
-background:rgba(255,255,255,.01);
-
-backdrop-filter:blur(4px);
-
-}
-
-.archive-title{
-
-color:#b08d57;
-
-font-size:14px;
-
-letter-spacing:6px;
-
-margin-bottom:40px;
-
-text-transform:uppercase;
-
-}
-
-.archive-item{
-
-margin-bottom:30px;
-
-}
-
-.archive-label{
-
-color:#8a734d;
-
-font-size:12px;
-
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-margin-bottom:10px;
-
-}
-
-.archive-value{
-
-color:#d4c2a1;
-
-font-size:22px;
-
-line-height:1.6;
-
-}
 <style>
 
 *{
@@ -86,14 +16,15 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-
 background:#050505;
-
 font-family:Arial,sans-serif;
-
 overflow-x:hidden;
-
+color:#b08d57;
 }
 
 /* HERO */
@@ -103,7 +34,6 @@ overflow-x:hidden;
 height:100vh;
 
 display:flex;
-
 justify-content:center;
 align-items:center;
 
@@ -115,50 +45,46 @@ overflow:hidden;
 
 }
 
-/* VOID SYMBOL */
-
 .symbol{
 
 position:absolute;
 
 font-size:380px;
 
-transform:translateY(-40px);
-
 line-height:.8;
 
 color:#b08d57;
 
 opacity:.05;
+
+transform:translateY(-40px);
+
+animation:breathe 8s ease-in-out infinite;
+
 }
 
 @keyframes breathe{
 
 0%{
-transform:scale(1);
+transform:translateY(-40px) scale(1);
 opacity:.04;
 }
 
 50%{
-transform:scale(1.06);
+transform:translateY(-40px) scale(1.06);
 opacity:.08;
 }
 
 100%{
-transform:scale(1);
+transform:translateY(-40px) scale(1);
 opacity:.04;
 }
 
 }
 
 .content{
-
 position:relative;
-
 z-index:2;
-
-color:#b08d57;
-
 }
 
 .number{
@@ -206,14 +132,14 @@ line-height:1.8;
 color:#b08d57;
 
 }
-/* THE CONCEPT */
 
-.concept-section{
+/* SECTIONS */
+
+.section{
 
 min-height:100vh;
 
 display:flex;
-
 flex-direction:column;
 
 justify-content:center;
@@ -221,13 +147,11 @@ align-items:center;
 
 text-align:center;
 
-padding:40px;
+padding:60px 30px;
 
 }
 
-.concept-section h2{
-
-color:#b08d57;
+.section h2{
 
 font-size:clamp(28px,5vw,50px);
 
@@ -239,18 +163,195 @@ margin-bottom:60px;
 
 }
 
-.concept-section p{
+.section p{
 
 max-width:700px;
 
-color:#d4c2a1;
-
-font-size:24px;
+font-size:20px;
 
 line-height:2;
 
+color:#d4c2a1;
+
 }
-<section class="archive-notes">
+
+/* ARCHIVE NOTES */
+
+.archive-card{
+
+width:min(90%,520px);
+
+border:1px solid rgba(176,141,87,.25);
+
+padding:50px 35px;
+
+text-align:left;
+
+}
+
+.archive-title{
+
+font-size:14px;
+
+letter-spacing:6px;
+
+margin-bottom:40px;
+
+}
+
+.archive-item{
+
+margin-bottom:30px;
+
+}
+
+.archive-label{
+
+font-size:12px;
+
+letter-spacing:3px;
+
+color:#8a734d;
+
+margin-bottom:10px;
+
+text-transform:uppercase;
+
+}
+
+.archive-value{
+
+font-size:22px;
+
+color:#d4c2a1;
+
+}
+
+/* PLACEHOLDERS */
+
+.placeholder{
+
+width:min(90%,900px);
+
+height:60vh;
+
+border:1px solid rgba(176,141,87,.20);
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+font-size:28px;
+
+letter-spacing:6px;
+
+color:#b08d57;
+
+}
+
+/* NEXT */
+
+.next{
+
+text-decoration:none;
+
+color:#b08d57;
+
+}
+
+.next h3{
+
+font-size:18px;
+
+letter-spacing:6px;
+
+margin-bottom:25px;
+
+}
+
+.next-name{
+
+font-size:50px;
+
+font-weight:300;
+
+letter-spacing:10px;
+
+margin-bottom:10px;
+
+}
+
+.next-sub{
+
+color:#d4c2a1;
+
+font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="symbol">
+○
+<br>
+•
+</div>
+
+<div class="content">
+
+<div class="number">01</div>
+
+<div class="name">VOID</div>
+
+<div class="meaning">BEGINNING</div>
+
+<div class="quote">
+Nothing.<br>
+Yet.<br>
+Everything.
+</div>
+
+</div>
+
+</section>
+
+<!-- THE CONCEPT -->
+
+<section class="section">
+
+<h2>THE CONCEPT</h2>
+
+<p>
+
+Before every mark,
+there is emptiness.
+
+<br><br>
+
+Before every journey,
+there is silence.
+
+<br><br>
+
+VOID represents the moment
+before creation.
+
+</p>
+
+</section>
+
+<!-- ARCHIVE NOTES -->
+
+<section class="section">
 
 <div class="archive-card">
 
@@ -309,62 +410,58 @@ VOID-01
 </div>
 
 </section>
-</style>
 
-</head>
+<!-- PLACEHOLDERS -->
 
-<body>
+<section class="section">
+<h2>LIFESTYLE</h2>
+<div class="placeholder">IMAGE PLACEHOLDER</div>
+</section>
 
-<section class="hero">
+<section class="section">
+<h2>FRONT VIEW</h2>
+<div class="placeholder">IMAGE PLACEHOLDER</div>
+</section>
 
-<div class="symbol">
+<section class="section">
+<h2>BACK VIEW</h2>
+<div class="placeholder">IMAGE PLACEHOLDER</div>
+</section>
 
-○
-<br>
-•
+<section class="section">
+<h2>DETAILS</h2>
+<div class="placeholder">IMAGE PLACEHOLDER</div>
+</section>
 
+<section class="section">
+<h2>FABRIC</h2>
+<div class="placeholder">IMAGE PLACEHOLDER</div>
+</section>
+
+<section class="section">
+<h2>PACKAGING</h2>
+<div class="placeholder">IMAGE PLACEHOLDER</div>
+</section>
+
+<!-- NEXT CONCEPT -->
+
+<section class="section">
+
+<a href="roots.html" class="next">
+
+<h3>CONTINUE THE ARCHIVE</h3>
+
+<div class="next-name">
+ROOTS
 </div>
 
-<div class="content">
-
-<div class="number">01</div>
-
-<div class="name">VOID</div>
-
-<div class="meaning">BEGINNING</div>
-
-<div class="quote">
-
-Nothing.<br>
-Yet.<br>
-Everything.
-
+<div class="next-sub">
+Origin →
 </div>
 
-</div>
+</a>
 
 </section>
-<section class="concept-section">
 
-<h2>THE CONCEPT</h2>
-
-<p>
-
-Before every mark,
-there is emptiness.
-
-<br><br>
-
-Before every journey,
-there is silence.
-
-<br><br>
-
-VOID represents the moment
-before creation.
-
-</p>
-
-</section>
-  </body>
+</body>
 </html>

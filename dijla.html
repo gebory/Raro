@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DIJLA | RARO</title>
+<title>RARO — DIJLA</title>
 
 <style>
 
@@ -13,117 +14,132 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 }
 
 body{
-background:#0f0f0f;
-color:#f3f0ea;
+
+background:#050505;
+
+font-family:Arial,sans-serif;
+
+overflow:hidden;
+
 }
 
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px;
-border-bottom:1px solid #222;
-}
-
-.logo{
-font-size:28px;
-letter-spacing:12px;
-}
-
-.nav a{
-color:#f3f0ea;
-text-decoration:none;
-margin-left:20px;
-font-size:14px;
-}
+/* HERO */
 
 .hero{
-padding:60px 25px;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
 text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
 }
 
-.hero h1{
-font-size:60px;
-margin-bottom:10px;
+/* FLOW */
+
+.flow{
+
+position:absolute;
+
+font-size:240px;
+
+letter-spacing:20px;
+
+color:#E8E3D7;
+
+opacity:.06;
+
+animation:flowMove 10s ease-in-out infinite;
+
+user-select:none;
+
+white-space:nowrap;
+
 }
 
-.hero p{
-color:#999;
+@keyframes flowMove{
+
+0%{
+transform:translateX(-40px);
+opacity:.04;
+}
+
+50%{
+transform:translateX(40px);
+opacity:.08;
+}
+
+100%{
+transform:translateX(-40px);
+opacity:.04;
+}
+
+}
+
+.content{
+
+position:relative;
+
+z-index:2;
+
+color:#E8E3D7;
+
+}
+
+.number{
+
+font-size:12px;
+
+letter-spacing:8px;
+
+margin-bottom:40px;
+
+opacity:.8;
+
+}
+
+.name{
+
+font-size:clamp(60px,10vw,120px);
+
+font-weight:300;
+
+letter-spacing:14px;
+
+margin-bottom:20px;
+
+}
+
+.meaning{
+
 font-size:18px;
+
+letter-spacing:6px;
+
+margin-bottom:30px;
+
+color:#F1ECE0;
+
 }
 
-.gallery{
-padding:25px;
-}
+.quote{
 
-.block{
-margin-bottom:50px;
-}
+font-size:20px;
 
-.block h2{
-font-size:14px;
-letter-spacing:3px;
-margin-bottom:15px;
-color:#888;
-}
-
-.block img{
-width:100%;
-display:block;
-border:1px solid #222;
-}
-
-.info{
-padding:25px;
-max-width:700px;
-margin:auto;
-}
-
-.info h3{
-font-size:28px;
-margin-bottom:20px;
-}
-
-.info p{
 line-height:1.8;
-color:#aaa;
-margin-bottom:20px;
-}
 
-.specs{
-border:1px solid #222;
-padding:20px;
-margin-top:30px;
-}
+color:#D7D0C2;
 
-.specs div{
-margin-bottom:10px;
-}
-
-.price{
-font-size:50px;
-margin-top:40px;
-}
-
-.button{
-display:block;
-text-align:center;
-background:#f3f0ea;
-color:#111;
-text-decoration:none;
-padding:18px;
-margin-top:30px;
-font-weight:bold;
-}
-
-.footer{
-padding:60px 25px;
-text-align:center;
-color:#666;
 }
 
 </style>
@@ -132,116 +148,33 @@ color:#666;
 
 <body>
 
-<div class="nav">
+<section class="hero">
 
-<div class="logo">
-R A R O
-</div>
+<div class="flow">
 
-<div>
-<a href="index.html">HOME</a>
-<a href="collection.html">COLLECTION</a>
-</div>
+≈ ≈ ≈ ≈ ≈
 
 </div>
 
-<div class="hero">
+<div class="content">
 
-<h1>DIJLA</h1>
+<div class="number">04</div>
 
-<p>
-Movement Without Noise
-</p>
+<div class="name">DIJLA</div>
 
-</div>
+<div class="meaning">FLOW</div>
 
-<div class="gallery">
+<div class="quote">
 
-<div class="block">
-<h2>01 FRONT VIEW</h2>
-<img src="images/IMG_2111.jpeg">
-</div>
+Movement never asks<br>
+for permission.
 
-<div class="block">
-<h2>02 BACK VIEW</h2>
-<img src="images/IMG_2112.jpeg">
-</div>
-
-<div class="block">
-<h2>03 DETAIL SHOT</h2>
-<img src="images/IMG_2113.jpeg">
-</div>
-
-<div class="block">
-<h2>04 FABRIC DETAIL</h2>
-<img src="images/IMG_2114.jpeg">
-</div>
-
-<div class="block">
-<h2>05 NECK LABEL</h2>
-<img src="images/IMG_2115.jpeg">
-</div>
-
-<div class="block">
-<h2>06 LIFESTYLE SHOT</h2>
-<img src="images/IMG_2116.jpeg">
-</div>
-
-<div class="block">
-<h2>07 PACKAGING</h2>
-<img src="images/IMG_2117.jpeg">
 </div>
 
 </div>
 
-<div class="info">
-
-<h3>DIJLA</h3>
-
-<p>
-
-Inspired by the river that shaped generations.
-
-A piece built around movement, continuity and quiet strength.
-
-Produced in limited numbers and never restocked.
-
-</p>
-
-<div class="specs">
-
-<div>100% Cotton</div>
-
-<div>240 GSM</div>
-
-<div>Oversized Fit</div>
-
-<div>Drop Shoulder</div>
-
-<div>Limited To 40 Pieces</div>
-
-<div>Made In Iraq</div>
-
-</div>
-
-<div class="price">
-39$
-</div>
-
-<a href="https://wa.me/9647724633842?text=مرحباً%20RARO،%20أرغب%20بالانضمام%20إلى%20قائمة%20انتظار%20DIJLA." target="_blank" class="button">
-JOIN WAITLIST
-</a>
-
-
-</div>
-
-<div class="footer">
-
-Crafted In Limited Numbers.
-<br><br>
-Designed To Remain Rare.
-
-</div>
+</section>
 
 </body>
+
 </html>

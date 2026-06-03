@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DROP 01 | RARO</title>
+
+<title>RARO — Collection</title>
 
 <style>
 
@@ -11,228 +14,280 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-background:#0f0f0f;
-color:#f3f0ea;
+
+background:#050505;
+font-family:Arial,sans-serif;
+overflow-x:hidden;
+
 }
 
-.nav{
+/* HEADER */
+
+.header{
+
+height:100vh;
+
 display:flex;
-justify-content:space-between;
+flex-direction:column;
+
+justify-content:center;
 align-items:center;
-padding:25px;
-border-bottom:1px solid #222;
-}
 
-.logo{
-font-size:28px;
-letter-spacing:8px;
-}
-
-.menu a{
-color:#f3f0ea;
-text-decoration:none;
-margin-left:20px;
-font-size:14px;
-}
-
-.hero{
 text-align:center;
-padding:80px 20px;
+
+padding:30px;
+
 }
 
-.hero h1{
-font-size:60px;
-margin-bottom:10px;
+.header h1{
+
+color:#b08d57;
+
+font-size:clamp(50px,8vw,90px);
+
+font-weight:300;
+
+letter-spacing:12px;
+
+margin-bottom:25px;
+
 }
 
-.hero p{
-color:#999;
+.header p{
+
+color:#d4c2a1;
+
+font-size:18px;
+
+line-height:1.8;
+
 }
 
-.grid{
-display:grid;
-grid-template-columns:1fr;
-gap:40px;
-padding:40px 20px 80px;
-max-width:1000px;
-margin:auto;
-}
+/* SECTIONS */
 
-.card{
-background:#161616;
+.concept{
+
+position:relative;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
 overflow:hidden;
-border:1px solid #222;
-}
 
-.card img{
-width:100%;
-height:450px;
-object-fit:cover;
-display:block;
-}
-
-.info{
-padding:25px;
-}
-
-.info h2{
-margin-bottom:10px;
-}
-
-.info p{
-color:#999;
-margin-bottom:20px;
-}
-
-.button{
-display:inline-block;
-padding:12px 24px;
-border:1px solid #f3f0ea;
-color:#f3f0ea;
 text-decoration:none;
+
+}
+
+.content{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.number{
+
+font-size:12px;
+
+letter-spacing:6px;
+
+margin-bottom:20px;
+
+opacity:.7;
+
+}
+
+.name{
+
+font-size:clamp(50px,8vw,90px);
+
+font-weight:300;
+
+letter-spacing:10px;
+
+margin-bottom:15px;
+
+}
+
+.meaning{
+
+font-size:18px;
+
+letter-spacing:4px;
+
+margin-bottom:25px;
+
+}
+
+.quote{
+
+font-size:20px;
+
+max-width:500px;
+
+line-height:1.8;
+
+padding:0 25px;
+
+}
+
+.symbol{
+
+position:absolute;
+
+font-size:220px;
+
+font-weight:100;
+
+opacity:.05;
+
+z-index:1;
+
+line-height:1.1;
+
+transition:.4s;
+
+}
+
+.concept:hover .symbol{
+
+opacity:.12;
+
+transform:scale(1.05);
+
+}
+
+/* VOID */
+
+.void{
+
+background:#050505;
+
+color:#b08d57;
+
+}
+
+.void::before{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+height:500px;
+
+background:radial-gradient(circle,
+rgba(176,141,87,.15),
+transparent 70%);
+
+filter:blur(80px);
+
+}
+
+/* ROOTS */
+
+.roots{
+
+background:#050505;
+
+color:#7e8a68;
+
+}
+
+.roots::before{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+height:500px;
+
+background:radial-gradient(circle,
+rgba(126,138,104,.15),
+transparent 70%);
+
+filter:blur(80px);
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="nav">
+<section class="header">
 
-<div class="logo">
-RARO
-</div>
-
-<div class="menu">
-<a href="index.html">HOME</a>
-<a href="about.html">ABOUT</a>
-<a href="waitlist.html">WAITLIST</a>
-</div>
-
-</div>
-
-<div class="hero">
-
-<h1>DROP 01</h1>
+<h1>THE COLLECTION</h1>
 
 <p>
-Crafted in limited numbers.
-Designed to remain rare.
+Six concepts.<br>
+One archive.
 </p>
 
+</section>
+
+<a href="void.html" class="concept void">
+
+<div class="symbol">
+○<br>•
 </div>
 
-<div class="grid">
+<div class="content">
 
-    <!-- ATHAR -->
-    <a href="athar.html" class="card">
+<div class="number">01</div>
 
-        <img src="images/images/IMG_2079.jpeg">
+<div class="name">VOID</div>
 
-        <div class="info">
-            <h2>ATHAR</h2>
-            <p>40 PIECES ONLY</p>
-        </div>
+<div class="meaning">BEGINNING</div>
 
-    </a>
-
-    <!-- DIJLA -->
-    <a href="dijla.html" class="card">
-
-        <img src="images/IMG_2111.jpeg">
-
-        <div class="info">
-            <h2>DIJLA</h2>
-            <p>Movement Without Noise</p>
-        </div>
-
-    </a>
-
-</div>
-
-<img src="images/images/IMG_2079.jpeg">
-
-<div class="info">
-
-<h2>DIJLA</h2>
-
-<p>
-COMING SOON
-</p>
-
+<div class="quote">
+Nothing. Yet. Everything.
 </div>
 
 </div>
 
-<div class="card">
+</a>
 
-<img src="images/images/IMG_2079.jpeg">
+<a href="roots.html" class="concept roots">
 
-<div class="info">
+<div class="symbol">
+│<br>
+/│\<br>
+/ │ \
+</div>
 
-<h2>ROOTS</h2>
+<div class="content">
 
-<p>
-COMING SOON
-</p>
+<div class="number">02</div>
 
+<div class="name">ROOTS</div>
+
+<div class="meaning">ORIGIN</div>
+
+<div class="quote">
+Every origin shapes the path ahead.
 </div>
 
 </div>
 
-<div class="card">
-
-<img src="images/images/IMG_2079.jpeg">
-
-<div class="info">
-
-<h2>NHR</h2>
-
-<p>
-COMING SOON
-</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="images/images/IMG_2079.jpeg">
-
-<div class="info">
-
-<h2>33°</h2>
-
-<p>
-COMING SOON
-</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="images/images/IMG_2079.jpeg">
-
-<div class="info">
-
-<h2>ONE OF FORTY</h2>
-
-<p>
-COMING SOON
-</p>
-
-</div>
-
-</div>
-
-</div>
+</a>
 
 </body>
-</htm
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RARO — NHR</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#050505;
+
+font-family:Arial,sans-serif;
+
+overflow:hidden;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* JOURNEY LINE */
+
+.journey-line{
+
+position:absolute;
+
+width:120%;
+
+height:2px;
+
+background:#425A8B;
+
+opacity:.12;
+
+animation:travel 12s ease-in-out infinite;
+
+}
+
+@keyframes travel{
+
+0%{
+transform:translateX(-5%);
+opacity:.08;
+}
+
+50%{
+transform:translateX(5%);
+opacity:.16;
+}
+
+100%{
+transform:translateX(-5%);
+opacity:.08;
+}
+
+}
+
+.content{
+
+position:relative;
+
+z-index:2;
+
+color:#425A8B;
+
+}
+
+.number{
+
+font-size:12px;
+
+letter-spacing:8px;
+
+margin-bottom:40px;
+
+opacity:.8;
+
+}
+
+.name{
+
+font-size:clamp(60px,10vw,120px);
+
+font-weight:300;
+
+letter-spacing:14px;
+
+margin-bottom:20px;
+
+}
+
+.meaning{
+
+font-size:18px;
+
+letter-spacing:6px;
+
+margin-bottom:30px;
+
+color:#AAB6D1;
+
+}
+
+.quote{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#D3DBEA;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="journey-line"></div>
+
+<div class="content">
+
+<div class="number">03</div>
+
+<div class="name">NHR</div>
+
+<div class="meaning">JOURNEY</div>
+
+<div class="quote">
+
+Every path begins<br>
+with a single step.
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>

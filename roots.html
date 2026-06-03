@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RARO — ROOTS</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#050505;
+
+font-family:Arial,sans-serif;
+
+overflow:hidden;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* ROOTS SYMBOL */
+
+.symbol{
+
+position:absolute;
+
+font-size:460px;
+
+line-height:.75;
+
+color:#556244;
+
+opacity:.08;
+
+animation:grow 10s ease-in-out infinite;
+
+user-select:none;
+
+}
+
+@keyframes grow{
+
+0%{
+transform:scale(1);
+opacity:.06;
+}
+
+50%{
+transform:scale(1.04);
+opacity:.10;
+}
+
+100%{
+transform:scale(1);
+opacity:.06;
+}
+
+}
+
+.content{
+
+position:relative;
+
+z-index:2;
+
+color:#556244;
+
+}
+
+.number{
+
+font-size:12px;
+
+letter-spacing:8px;
+
+margin-bottom:35px;
+
+opacity:.75;
+
+}
+
+.name{
+
+font-size:clamp(60px,10vw,120px);
+
+font-weight:300;
+
+letter-spacing:14px;
+
+margin-bottom:20px;
+
+}
+
+.meaning{
+
+font-size:18px;
+
+letter-spacing:6px;
+
+margin-bottom:30px;
+
+color:#b8c0ad;
+
+}
+
+.quote{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#c8d0bd;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="symbol">
+
+│
+<br>
+/│\
+<br>
+/ │ \
+
+</div>
+
+<div class="content">
+
+<div class="number">02</div>
+
+<div class="name">ROOTS</div>
+
+<div class="meaning">ORIGIN</div>
+
+<div class="quote">
+
+Every origin shapes<br>
+the path ahead.
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+
+</html>

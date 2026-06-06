@@ -1,1 +1,172 @@
+<style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#d4b06a;
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+.about-container{
+    max-width:700px;
+    margin:auto;
+    padding:80px 30px;
+    text-align:center;
+}
+
+.logo{
+    font-size:4rem;
+    letter-spacing:12px;
+    margin-bottom:40px;
+}
+
+.archive-title{
+    font-size:1rem;
+    letter-spacing:5px;
+    margin-bottom:40px;
+}
+
+.intro{
+    font-size:1.2rem;
+    line-height:1.8;
+    color:#d8d0c5;
+    margin-bottom:80px;
+}
+
+.section-title{
+    font-size:0.9rem;
+    letter-spacing:5px;
+    margin-bottom:25px;
+}
+
+.section-text{
+    color:#d8d0c5;
+    line-height:2;
+    font-size:1rem;
+}
+
+.container{
+
+text-align:center;
+
+}
+
+.enter{
+
+display:inline-block;
+
+padding:18px 50px;
+
+border:1px solid #b08d57;
+
+color:#b08d57;
+
+text-decoration:none;
+
+letter-spacing:4px;
+
+transition:0.3s;
+
+margin-bottom:60px;
+
+}
+
+.enter:hover{
+
+background:#b08d57;
+
+color:black;
+
+}
+
+
+.bottom{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:60px;
+    flex-wrap:wrap;
+}
+
+.bottom a{
+    color:#b08d57;
+    text-decoration:none;
+    letter-spacing:4px;
+    font-size:14px;
+    white-space:nowrap;
+}
+.glow{
+
+position:absolute;
+
+width:500px;
+
+height:500px;
+
+background:radial-gradient(circle,
+rgba(176,141,87,0.18) 0%,
+rgba(176,141,87,0.04) 40%,
+transparent 70%);
+
+filter:blur(50px);
+
+z-index:-1;
+
+}
+.mark-container{
+    margin:50px 0;
+}
+
+.raro-mark{
+    width:140px;
+    max-width:40%;
+    height:auto;
+}
+    .collections{
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.collections div{
+    color:#d4b06a;
+    letter-spacing:4px;
+    font-size:0.9rem;
+}
+a,
+a:visited,
+a:hover,
+a:active{
+
+color:#b08d57;
+text-decoration:none;
+
+}
+  .mark-container{
+
+margin-bottom:25px;
+
+}
+
+.raro-mark{
+
+width:90px;
+
+height:auto;
+
+display:block;
+
+margin:0 auto;
+
+opacity:.95;
+
+}  
+</style>

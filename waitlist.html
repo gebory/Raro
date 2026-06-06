@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -16,83 +17,180 @@ box-sizing:border-box;
 }
 
 body{
+
 background:#050505;
-font-family:Arial,sans-serif;
 color:#b08d57;
+font-family:Arial,sans-serif;
+
 min-height:100vh;
+
 display:flex;
 justify-content:center;
 align-items:center;
-padding:80px 30px;
+
+padding:60px 30px;
+
 }
 
 .container{
+
 width:100%;
 max-width:520px;
+
 text-align:center;
+
+}
+
+.mark-container{
+
+margin-bottom:35px;
+
 }
 
 .raro-mark{
-width:90px;
+
+width:72px;
+height:auto;
+
 display:block;
-margin:0 auto 40px;
+margin:0 auto;
+
+opacity:.95;
+
 }
 
 .logo{
-font-size:56px;
+
+font-size:clamp(54px,10vw,88px);
+
 font-weight:300;
+
 letter-spacing:12px;
-margin-bottom:20px;
+
+margin-bottom:25px;
+
+color:#b08d57;
+
 }
 
 .subtitle{
+
 font-size:14px;
-letter-spacing:8px;
+
+letter-spacing:10px;
+
 margin-bottom:50px;
+
+color:#b08d57;
+
 }
 
 .description{
-max-width:420px;
+
+max-width:500px;
+
 margin:0 auto 70px;
-color:#d8d0c5;
+
 line-height:2;
-font-size:18px;
+
+font-size:20px;
+
+color:#d8d0c5;
+
 }
 
-.form-group{
-margin-bottom:30px;
+form{
+
+width:100%;
+
 }
 
 input{
+
 width:100%;
+
 background:transparent;
+
 border:none;
+
 border-bottom:1px solid rgba(176,141,87,.35);
-padding:16px 0;
-font-size:16px;
+
+padding:20px 0;
+
+margin-bottom:30px;
+
 color:#d8d0c5;
+
+font-size:18px;
+
 outline:none;
+
 }
 
 input::placeholder{
-color:rgba(216,208,197,.45);
+
+color:#7e7568;
+
 }
 
 button{
-margin-top:30px;
+
+width:100%;
+
+padding:22px;
+
+margin-top:20px;
+
 background:transparent;
+
 border:1px solid #b08d57;
+
 color:#b08d57;
-padding:18px 50px;
-letter-spacing:4px;
+
 font-size:13px;
+
+letter-spacing:6px;
+
 cursor:pointer;
+
 transition:.3s;
+
 }
 
 button:hover{
+
 background:#b08d57;
+
 color:#050505;
+
+}
+
+@media(max-width:768px){
+
+.logo{
+
+font-size:72px;
+
+letter-spacing:10px;
+
+}
+
+.description{
+
+font-size:18px;
+
+line-height:1.9;
+
+margin-bottom:60px;
+
+}
+
+input{
+
+font-size:17px;
+
+}
+
 }
 
 </style>
@@ -103,10 +201,14 @@ color:#050505;
 
 <div class="container">
 
+<div class="mark-container">
+
 <img
 src="RARO_MASTER/02_MASTER_ASSETS/00B72C45-AAB4-4D9D-A816-0C7C8D6F47F0.jpeg"
 alt="RARO Mark"
 class="raro-mark">
+
+</div>
 
 <div class="logo">
 RARO
@@ -117,12 +219,20 @@ JOIN THE ARCHIVE
 </div>
 
 <div class="description">
-A place within the Archive is reserved for those who arrive before the release.
+
+A place within the Archive is reserved
+for those who arrive before the release.
+
 </div>
+
 <form
-id="waitlist-form"
 action="https://formspree.io/f/xbdedajg"
 method="POST">
+
+<input
+type="hidden"
+name="_next"
+value="https://gebory.github.io/Raro/thankyou.html">
 
 <input
 type="text"
@@ -146,19 +256,17 @@ required>
 type="text"
 name="instagram"
 placeholder="Instagram (Optional)">
-</div>
 
 <button type="submit">
-REQUEST ACCESS
-</button>
-<input
-type="hidden"
-name="_next"
-value="https://gebory.github.io/Raro/thankyou.html">
-</form>
 
+REQUEST ACCESS
+
+</button>
+
+</form>
 
 </div>
 
 </body>
-</html
+
+</html>

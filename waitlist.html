@@ -1,10 +1,13 @@
 "}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Waitlist | RARO</title>
+
+<title>RARO — Waitlist</title>
 
 <style>
 
@@ -12,17 +15,17 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 }
 
 body{
-background:#0f0f0f;
-color:#f3f0ea;
+background:#050505;
+color:#b08d57;
+font-family:Arial,sans-serif;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-min-height:100vh;
-padding:30px;
+padding:40px;
 }
 
 .container{
@@ -32,42 +35,47 @@ text-align:center;
 }
 
 .logo{
-font-size:60px;
-letter-spacing:10px;
+font-size:72px;
+letter-spacing:12px;
 margin-bottom:30px;
 }
 
-.tagline{
-color:#999;
-margin-bottom:50px;
-letter-spacing:3px;
+.subtitle{
+letter-spacing:8px;
+font-size:14px;
+margin-bottom:60px;
+}
+
+.description{
+color:#d8d0c5;
+line-height:2;
+margin-bottom:60px;
 }
 
 input{
 width:100%;
-padding:18px;
-margin-bottom:20px;
-background:#111;
-border:1px solid #333;
-color:white;
+background:transparent;
+border:none;
+border-bottom:1px solid rgba(176,141,87,.4);
+padding:20px 0;
+margin-bottom:25px;
+color:#d8d0c5;
 font-size:16px;
+outline:none;
 }
 
 button{
-width:100%;
-padding:18px;
-border:none;
-background:#f3f0ea;
-color:#111;
-font-weight:bold;
-font-size:16px;
+background:none;
+border:1px solid #b08d57;
+color:#b08d57;
+padding:18px 40px;
+letter-spacing:4px;
 cursor:pointer;
+transition:.3s;
 }
 
-.note{
-margin-top:25px;
-color:#777;
-font-size:14px;
+button:hover{
+opacity:.8;
 }
 
 </style>
@@ -82,26 +90,27 @@ font-size:14px;
 RARO
 </div>
 
-<div class="tagline">
-NOT MADE FOR EVERYONE
+<div class="subtitle">
+JOIN THE ARCHIVE
 </div>
 
-<input type="text" placeholder="Your Name">
+<div class="description">
+Request access to future releases, archive updates and limited drops.
+</div>
 
-<input type="email" placeholder="Email Address">
+<form>
 
-<button>
-JOIN WAITLIST
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Country">
+
+<button type="submit">
+REQUEST ACCESS
 </button>
 
-<div class="note">
-
-Be the first to access DROP 01.
-
-Limited quantities.
-No restocks.
-
-</div>
+</form>
 
 </div>
 

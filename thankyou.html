@@ -1,65 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>RARO — Archive Reserved</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
+
 background:#050505;
 color:#b08d57;
 font-family:Arial,sans-serif;
+
+min-height:100vh;
 
 display:flex;
 justify-content:center;
 align-items:center;
 
-height:100vh;
-text-align:center;
 padding:40px;
+
+text-align:center;
+
 }
 
-h1{
-font-size:48px;
+.container{
+
+max-width:600px;
+
+}
+
+.raro-mark{
+
+width:90px;
+height:auto;
+
+margin-bottom:40px;
+
+opacity:.95;
+
+}
+
+.logo{
+
+font-size:72px;
+
 font-weight:300;
+
+letter-spacing:12px;
+
+margin-bottom:25px;
+
+}
+
+.subtitle{
+
+font-size:14px;
+
 letter-spacing:8px;
-margin-bottom:30px;
+
+margin-bottom:60px;
+
 }
 
-p{
-max-width:500px;
+.message{
+
+font-size:22px;
+
 line-height:2;
+
 color:#d8d0c5;
+
+margin-bottom:70px;
+
 }
 
-a{
+.home-link{
+
 display:inline-block;
-margin-top:40px;
+
+padding:18px 40px;
+
+border:1px solid #b08d57;
+
 color:#b08d57;
+
 text-decoration:none;
+
 letter-spacing:4px;
+
+transition:.3s;
+
+}
+
+.home-link:hover{
+
+background:#b08d57;
+
+color:#050505;
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div>
+<div class="container">
 
-<h1>RARO</h1>
+<img
+src="RARO_MASTER/02_MASTER_ASSETS/00B72C45-AAB4-4D9D-A816-0C7C8D6F47F0.jpeg"
+alt="RARO Mark"
+class="raro-mark">
 
-<p>
-Your place within the Archive has been reserved.
-</p>
+<div class="logo">
+RARO
+</div>
 
-<a href="index.html">
-RETURN TO ARCHIVE
+<div class="subtitle">
+WELCOME TO THE ARCHIVE
+</div>
+
+<div class="message">
+
+Your place has been reserved.
+
+<br><br>
+
+You will be among the first to receive updates, releases and access to future drops.
+
+</div>
+
+<a href="index.html" class="home-link">
+
+RETURN TO RARO
+
 </a>
 
 </div>
 
 </body>
+
 </html>
